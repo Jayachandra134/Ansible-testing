@@ -1,0 +1,8 @@
+- name: variables from arguments
+  hosts: localhost
+  vars:
+    person: aravind
+    wishes: goodmorning
+  tasks:
+  ansible.builtin.dwgug:
+    msg: "hi {{person}},very {{wishers}}"
