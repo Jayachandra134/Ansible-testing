@@ -1,5 +1,5 @@
 - name: variables at play level
-  Hosts: localhost
+  hosts: localhost
   vars:
     course: Devops
     trainer: shivakumar
