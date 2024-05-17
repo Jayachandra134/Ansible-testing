@@ -7,8 +7,11 @@
       private: false
     - name: PASSWORD
       prompt: please enter your password
-      private: false
+      private: true
   tasks
    - name: print information
      ansible.builtin.debug:
         msg: "hi {{USERNAME}},this is your {{PASSWORD}}"
+
+
+
