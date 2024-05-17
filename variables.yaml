@@ -6,5 +6,7 @@
     duration: 120hrs
   tasks:
   - name: print the variables
+    vars:
+      course: docker
     ansible.builtin.debug:
       msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}}"
