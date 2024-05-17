@@ -1,27 +1,16 @@
 - name: variables at play level
   hosts: localhost
-  vars: #variables from play level
+  vars: 
     course: Devops
     trainer: shivakumar
     duration: 120hrs
   tasks:
   - name: print the variables
     vars:
-      course: docker #variables from task level
+      course: docker 
     ansible.builtin.debug:
       msg: "I am learning {{course}} from {{trainer}} and duration is {{duration}}"
 
-#### variables from promt level
-- name: variables from promt
-  vars_prompt:
-    - name: USERNAME
-      prompt: please enter your username
-      private: false
-    - name: PASSWORD
-      prompt: please enter your password
-      private: false
-  - name: print information
-    ansible.builtin.debug:
-      msg: "hi {{USERNAME}},this is your {{PASSWORD}}"
+
 
  
